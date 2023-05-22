@@ -21,4 +21,4 @@ df = pd.read_csv(csv_url, on_bad_lines='skip')
 #df = load_data()
 # Print results.
 print('vivek')
-print(df)
+#print(df)
