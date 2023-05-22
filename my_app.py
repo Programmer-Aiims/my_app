@@ -20,4 +20,5 @@ csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv"
 df = pd.read_csv(csv_url, on_bad_lines='skip')
 #df = load_data()
 # Print results.
+print('vivek')
 print(df)
