@@ -14,6 +14,10 @@ def load_data(sheets_url):
     return pd.read_csv(url_1)
 
 #df = load_data(st.secrets["public_gsheets_url"])
-df = load_data()
+
+sheet_id = '1shPozJI4zs2HuY9P7MWoQzPj1pmrPy8NnJUQ-aScYY0'
+csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv"
+df = pd.read_csv(csv_url, on_bad_lines='skip')
+#df = load_data()
 # Print results.
 print(df)
