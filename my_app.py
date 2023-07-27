@@ -1,9 +1,10 @@
-# streamlit_app.py
-
-import pandas as pd
 import streamlit as st
+from PIL import Image
+import numpy as np
 
-picture = st.camera_input("Take a picture")
+imgbuffer = st.camera_input('cam')
 
-if picture:
-    st.image(picture)
+if imgbuffer:
+    img = Image.open(imgbuffer)
+    imgnp = np.array(img)
+    st.write(imgnp.shape)
