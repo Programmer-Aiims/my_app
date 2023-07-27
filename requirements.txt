@@ -1,1 +1,1 @@
-streamlit-drawable-canvas
+streamlit_drawable_canvas
